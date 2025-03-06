@@ -14,6 +14,7 @@
         z-index: 1;
         left: 0px;
         align-items: center;
+        background-color: white;
     }
     .head{
         display: flex;
@@ -87,12 +88,14 @@
             opacity: 1;
         }
         footer{
-            position: fixed;
+           /*  position: fixed; */
             width: 100%;
             bottom: 0px;
             left: 0px;
             display: flex;
             border-top: 1px solid black;
+            margin-left: 0px;
+            border-bottom: 1px solid black;
         }
         #foot{
           margin-left: 0px;
@@ -136,14 +139,35 @@
          .sp1{
             font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
             font-size: large;
-            margin-left: 80px;
+            margin-left: 75px;
             top: 0px;
          }
          #fu{
             font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
             font-size: large;
+            margin-left: 58px;
+         }
+         #fui{
+            margin-left: 20px;
+            font-size: 25px;
+         }
+         #ci{
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-size: large;
             margin-left: 30px;
          }
+         #cibox{
+            border-left: 2px solid black;
+            margin-left: 25px;
+         }
+.img{
+    width: 1100px;
+    height: 600px;
+    border: 0px solid black;
+    object-fit: cover;
+    margin-left: 220px;
+    border-radius: 10px;
+}
 </style>
 <body>
     <hr style="width: 800px;">
@@ -169,6 +193,12 @@
     </header>
     <hr id="close">
     <!-- body -->
+     <div>
+        <div id="mainph">
+            <img class="img" src="https://github.com/srivatsa2005/TrendyFriends/blob/main/Untitled%20design%20(16).png?raw=true">
+        </div>
+     </div>
+    <!-- body -->
     <footer>
         <div id="logbox"><img id="ftlogo" src="https://github.com/srivatsa2005/TrendyFriends/blob/main/TF%20LOGO.png?raw=true" alt="botlogo"></div>
         <div id="splitter"></div>
@@ -185,7 +215,7 @@
     <ul style="line-height: 1.5;">
         <li>Privacy Policy</li>
         <li>User Policy</li>
-        <li>About our Story</li>
+        <li>Cookie Policy</li>
     </ul>
 </div>
 <div>
@@ -199,13 +229,19 @@
 </div>
 <div>
     <p id="fu">Follow Us:</p>
-    <ul>
-        <li></li>
-        <li></li>
-        <li></li>
+    <ul type="none" style="display: flex;">
+        <li id="fui"><i class="fa-brands fa-instagram"></i></li>
+        <li id="fui"><i class="fa-brands fa-facebook"></i></li>
+        <li id="fui"><i class="fa-brands fa-x-twitter"></i></li>
+        <li id="fui"><i class="fa-brands fa-youtube"></i></li>
     </ul>
 </div>
+<div id="cibox">
+    <p id="ci">Contact Information:</p>
+    <p id="ci">Email: krishnacharan2016@gmail.com</p>
+    <p id="ci">phone no: 7396398788</p>
+    <p id="ci">Reach us: Trendyfriends.support</p>
+</div>
     </footer>
-    <!-- body -->
 </body>
 </html>
