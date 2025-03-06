@@ -160,13 +160,120 @@
             border-left: 2px solid black;
             margin-left: 25px;
          }
-.img{
+ #mnbox{
     width: 1100px;
     height: 600px;
-    border: 0px solid black;
-    object-fit: cover;
-    margin-left: 220px;
+    border: px solid black;
+    position: relative;
+    background-image: url("https://github.com/srivatsa2005/TrendyFriends/blob/main/Untitled%20design%20(16).png?raw=true");
+    background-size: cover;
     border-radius: 10px;
+    margin-top: 10px;
+    margin-left: 210px;
+    display: flex;
+    margin-bottom: 10px;
+ }
+#inbx1{
+    width: 180px;
+    height: 220px;
+    border: 0px solid black;
+    position: absolute;
+    margin-left: 700px;
+    margin-top: 80px;
+    border-radius: 10px;
+    background-color: aqua;
+    background-image: url("https://github.com/srivatsa2005/TrendyFriends/blob/main/Untitled%20design%20(14).png?raw=true");
+    background-size: cover;
+    opacity: 0.75;
+}
+
+#inbx2{
+    width: 180px;
+    height: 220px;
+    border: 0px solid black;
+    position: absolute;
+    margin-left: 850px;
+    margin-top: 270px;
+    border-radius: 10px;
+    background-color: azure;
+    background-image: url("https://github.com/srivatsa2005/TrendyFriends/blob/main/Untitled%20design%20(15).png?raw=true");
+    background-size: cover;
+    opacity: 0.75;
+}
+#inbx1:hover{
+    opacity: 1;
+    cursor: pointer;
+}
+#inbx2:hover{
+    opacity: 1;
+    cursor: pointer;
+}
+#bb1{
+  width: 80px;
+  height: 20px;
+  border-radius: 5px;
+  border: 0px;
+  margin-top: 188px;
+  margin-left: 10px;
+  cursor: pointer;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+background-color: khaki;
+}
+#bb2{
+    width: 85px;
+  height: 20px;
+  border-radius: 5px;
+  border: 0px;
+  margin-top: 188px;
+  margin-left: 10px;
+  cursor: pointer;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+background-color: khaki;
+}
+#mtext{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
+    font-size: 40px;
+    font-weight: bolder;
+    padding-top: 420px;
+    margin-left: 40px;
+    line-height: 1;
+}
+#slbt{
+    background-color: khaki;
+    height: 30px;
+    width: 140px;
+    border-radius: 5px;
+    border: 0px;
+    margin-left: 0px;
+    top: 0px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+    cursor: pointer;
+    opacity: 0.8;
+}
+#slbt:hover{
+opacity: 1;
+color: red;
+}
+#sale{
+    border: 1px solid black;
+    height: 20px;
+    align-items: center;
+    width: 20px;
+    padding-left: 0px;
+    border-radius: 50%;
+    margin-left: 10px;
+    animation: saleanim 4s infinite;
+    cursor: pointer;
+}
+@keyframes saleanim{
+    from{color: black;transform: rotate(0deg);}
+    to{color: rgb(255, 0, 0);transform: rotate(3600deg);}
+}
+#sltxt{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-left: 4px;
+    font-weight: bold;
 }
 </style>
 <body>
@@ -194,9 +301,19 @@
     <hr id="close">
     <!-- body -->
      <div>
-        <div id="mainph">
-            <img class="img" src="https://github.com/srivatsa2005/TrendyFriends/blob/main/Untitled%20design%20(16).png?raw=true">
+        <div id="mnbox">
+            <div style="display: flex;">
+            <p id="sale"><i style="margin-left: 4px;margin-top: 2px;" class="fa-solid fa-percent"></i></p>
+            <p id="sltxt">Sale End Soon!</p>
         </div>
+            <p id="mtext">Get Your Pair Before the<br> Trend Ends !! <br><button id="slbt">Get Noww! <i class="fa-solid fa-angle-right"></i><i class="fa-solid fa-angle-right"></i></button></p>
+        <div id="inbx1">
+            <button id="bb1">Buy Now! <i class="fa-solid fa-angle-right"></i></button>
+        </div>
+        <div id="inbx2">
+            <button id="bb2">Check out! <i class="fa-solid fa-angle-right"></i></button>
+        </div>
+     </div>
      </div>
     <!-- body -->
     <footer>
