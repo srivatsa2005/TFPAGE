@@ -1,125 +1,145 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
     <title>Document</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Pacifico&family=Playwrite+IT+Moderna:wght@100..400&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" rel="stylesheet">
 </head>
 <style>
-    header{
+    header {
         width: 100%;
         position: fixed;
         top: 0px;
         z-index: 1;
         left: 0px;
         align-items: center;
-        background-color: white;
+        background-color: rgba(247, 191, 203, 0.944);
     }
-    .head{
+
+    .head {
         display: flex;
         align-items: center;
         margin-left: 22.5%;
         margin-top: 20px;
     }
-    li{
+
+    li {
         margin-left: 60px;
         font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
         color: rgb(0, 0, 0);
         font-size: large;
         opacity: 0.5;
     }
-    li:hover{
+
+    li:hover {
         font-weight: 200;
         text-decoration: underline;
         text-decoration-color: red;
         opacity: 1;
         cursor: pointer;
     }
-    #logo{
+
+    #logo {
         margin-left: 20px;
         width: 100px;
         height: 50px;
         top: 0px;
         cursor: pointer;
     }
-    #close{
+
+    #close {
         margin-top: 50px;
     }
-    #menubar{
-           margin-left: 0px;
-           left: 0px;
-            color: black;
-            opacity: 0.5;
-            margin-top: 25px;
-            font-size: large;
-            cursor: pointer;
-        }
-        .dropdown{
-            position: relative;
-            display: inline-block;
-            margin-left: 28%;
-        }
-        .dropdown-content{
-            display: none;
-            position: absolute;
-            background-color: #f1f1f1;
-            min-width: 128px;
-            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-            z-index: 1;
-            border-radius: 5px;
-        }
-        .dropdown-content a{
-            color: black;
-            padding: 12px 16px;
-            text-decoration: none;
-            display: block;
-            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-        }
-        .dropdown-content a:hover{
-            background-color: #ddd;
-        }
-        .dropdown:hover 
-        .dropdown-content{
-            display: block;
-        }
-        .dropdown:hover 
-        #menubar{
-            opacity: 1;
-        }
-        footer{
-           /*  position: fixed; */
-            width: 100%;
-            bottom: 0px;
-            left: 0px;
-            display: flex;
-            border-top: 1px solid black;
-            margin-left: 0px;
-            border-bottom: 1px solid black;
-        }
-        #foot{
-          margin-left: 0px;
-          line-height: 1.8;
-          margin-top: 22px;
-        }
-        #box1{
-          margin-left: 0px;
-        }
-        #ftlogo{
-            width: 120px;
-            height: 60px;
-            margin-top:55px;
-            margin-left: 20px;
-        }
-        #logbox{
-           background-color: khaki;
-           position: relative;
-           width: 200px;
-           clip-path: polygon(0% 0%, 100% 0%, 80% 100%, 0% 100%);
-          border-top-right-radius: 10px;
-          border-bottom-right-radius: 10px;
-        }
-       /*  #splitter{
+
+    #menubar {
+        margin-left: 0px;
+        left: 0px;
+        color: black;
+        opacity: 0.5;
+        margin-top: 25px;
+        font-size: large;
+        cursor: pointer;
+    }
+
+    .dropdown {
+        position: relative;
+        display: inline-block;
+        margin-left: 28%;
+    }
+
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #f1f1f1;
+        min-width: 128px;
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+        z-index: 1;
+        border-radius: 5px;
+    }
+
+    .dropdown-content a {
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+
+    .dropdown-content a:hover {
+        background-color: #ddd;
+    }
+
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }
+
+    .dropdown:hover #menubar {
+        opacity: 1;
+    }
+
+    footer {
+        /*  position: fixed; */
+        width: 100%;
+        bottom: 0px;
+        left: 0px;
+        display: flex;
+        border-top: 1px solid black;
+        margin-left: 0px;
+        border-bottom: 1px solid black;
+    }
+
+    #foot {
+        margin-left: 0px;
+        line-height: 1.8;
+        margin-top: 22px;
+    }
+
+    #box1 {
+        margin-left: 0px;
+    }
+
+    #ftlogo {
+        width: 120px;
+        height: 60px;
+        margin-top: 55px;
+        margin-left: 20px;
+    }
+
+    #logbox {
+        background-color: khaki;
+        position: relative;
+        width: 200px;
+        clip-path: polygon(0% 0%, 100% 0%, 80% 100%, 0% 100%);
+        border-top-right-radius: 10px;
+        border-bottom-right-radius: 10px;
+    }
+
+    /*  #splitter{
             border-right: 2px solid;
             transform: rotate(25deg);
             width: 20px;
@@ -129,153 +149,386 @@
             background-color: khaki;
              transform: skewX(-5deg);
         } */
-         .sp{
-            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-            font-size: large;
-            margin-left: 90px;
-            top: 0px;
+    .sp {
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: large;
+        margin-left: 90px;
+        top: 0px;
 
-         }
-         .sp1{
-            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-            font-size: large;
-            margin-left: 75px;
-            top: 0px;
-         }
-         #fu{
-            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-            font-size: large;
-            margin-left: 58px;
-         }
-         #fui{
-            margin-left: 20px;
-            font-size: 25px;
-         }
-         #ci{
-            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-            font-size: large;
-            margin-left: 30px;
-         }
-         #cibox{
-            border-left: 2px solid black;
-            margin-left: 25px;
-         }
- #mnbox{
-    width: 1100px;
-    height: 600px;
-    border: px solid black;
-    position: relative;
-    background-image: url("https://github.com/srivatsa2005/TrendyFriends/blob/main/Untitled%20design%20(16).png?raw=true");
-    background-size: cover;
-    border-radius: 10px;
-    margin-top: 10px;
-    margin-left: 210px;
-    display: flex;
-    margin-bottom: 10px;
- }
-#inbx1{
-    width: 180px;
-    height: 220px;
-    border: 0px solid black;
-    position: absolute;
-    margin-left: 700px;
-    margin-top: 80px;
-    border-radius: 10px;
-    background-color: aqua;
-    background-image: url("https://github.com/srivatsa2005/TrendyFriends/blob/main/Untitled%20design%20(14).png?raw=true");
-    background-size: cover;
-    opacity: 0.75;
-}
+    }
 
-#inbx2{
-    width: 180px;
-    height: 220px;
-    border: 0px solid black;
-    position: absolute;
-    margin-left: 850px;
-    margin-top: 270px;
-    border-radius: 10px;
-    background-color: azure;
-    background-image: url("https://github.com/srivatsa2005/TrendyFriends/blob/main/Untitled%20design%20(15).png?raw=true");
-    background-size: cover;
-    opacity: 0.75;
-}
-#inbx1:hover{
-    opacity: 1;
-    cursor: pointer;
-}
-#inbx2:hover{
-    opacity: 1;
-    cursor: pointer;
-}
-#bb1{
-  width: 80px;
-  height: 20px;
-  border-radius: 5px;
-  border: 0px;
-  margin-top: 188px;
-  margin-left: 10px;
-  cursor: pointer;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-background-color: khaki;
-}
-#bb2{
-    width: 85px;
-  height: 20px;
-  border-radius: 5px;
-  border: 0px;
-  margin-top: 188px;
-  margin-left: 10px;
-  cursor: pointer;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-background-color: khaki;
-}
-#mtext{
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
-    font-size: 40px;
-    font-weight: bolder;
-    padding-top: 420px;
-    margin-left: 40px;
-    line-height: 1;
-}
-#slbt{
-    background-color: khaki;
-    height: 30px;
-    width: 140px;
-    border-radius: 5px;
-    border: 0px;
-    margin-left: 0px;
-    top: 0px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-weight: bold;
-    cursor: pointer;
-    opacity: 0.8;
-}
-#slbt:hover{
-opacity: 1;
-color: red;
-}
-#sale{
-    border: 1px solid black;
-    height: 20px;
-    align-items: center;
-    width: 20px;
-    padding-left: 0px;
-    border-radius: 50%;
-    margin-left: 10px;
-    animation: saleanim 4s infinite;
-    cursor: pointer;
-}
-@keyframes saleanim{
-    from{color: black;transform: rotate(0deg);}
-    to{color: rgb(255, 0, 0);transform: rotate(3600deg);}
-}
-#sltxt{
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    margin-left: 4px;
-    font-weight: bold;
-}
+    .sp1 {
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: large;
+        margin-left: 75px;
+        top: 0px;
+    }
+
+    #fu {
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: large;
+        margin-left: 58px;
+    }
+
+    #fui {
+        margin-left: 20px;
+        font-size: 25px;
+    }
+
+    #ci {
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: large;
+        margin-left: 30px;
+    }
+
+    #cibox {
+        border-left: 2px solid black;
+        margin-left: 25px;
+    }
+
+    #mnbox {
+        width: 1100px;
+        height: 600px;
+        border: px solid black;
+        position: relative;
+        background-image: url("https://github.com/srivatsa2005/TrendyFriends/blob/main/Untitled%20design%20(16).png?raw=true");
+        background-size: cover;
+        border-radius: 10px;
+        margin-top: 10px;
+        margin-left: 210px;
+        display: flex;
+        margin-bottom: 10px;
+    }
+
+    #inbx1 {
+        width: 180px;
+        height: 220px;
+        border: 0px solid black;
+        position: absolute;
+        margin-left: 700px;
+        margin-top: 80px;
+        border-radius: 10px;
+        background-color: aqua;
+        background-image: url("https://github.com/srivatsa2005/TrendyFriends/blob/main/Untitled%20design%20(14).png?raw=true");
+        background-size: cover;
+        opacity: 0.75;
+    }
+
+    #inbx2 {
+        width: 180px;
+        height: 220px;
+        border: 0px solid black;
+        position: absolute;
+        margin-left: 850px;
+        margin-top: 270px;
+        border-radius: 10px;
+        background-color: azure;
+        background-image: url("https://github.com/srivatsa2005/TrendyFriends/blob/main/Untitled%20design%20(15).png?raw=true");
+        background-size: cover;
+        opacity: 0.75;
+    }
+
+    #inbx1:hover {
+        opacity: 1;
+        cursor: pointer;
+    }
+
+    #inbx2:hover {
+        opacity: 1;
+        cursor: pointer;
+    }
+
+    #bb1 {
+        width: 80px;
+        height: 20px;
+        border-radius: 5px;
+        border: 0px;
+        margin-top: 188px;
+        margin-left: 10px;
+        cursor: pointer;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        background-color: khaki;
+    }
+
+    #bb2 {
+        width: 85px;
+        height: 20px;
+        border-radius: 5px;
+        border: 0px;
+        margin-top: 188px;
+        margin-left: 10px;
+        cursor: pointer;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        background-color: khaki;
+    }
+
+    #mtext {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-size: 40px;
+        font-weight: bolder;
+        padding-top: 420px;
+        margin-left: 40px;
+        line-height: 1;
+    }
+
+    #slbt {
+        background-color: khaki;
+        height: 30px;
+        width: 140px;
+        border-radius: 5px;
+        border: 0px;
+        margin-left: 0px;
+        top: 0px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-weight: bold;
+        cursor: pointer;
+        opacity: 0.8;
+    }
+
+    #slbt:hover {
+        opacity: 1;
+        color: red;
+    }
+
+    #sale {
+        border: 1px solid black;
+        height: 20px;
+        align-items: center;
+        width: 20px;
+        padding-left: 0px;
+        border-radius: 50%;
+        margin-left: 10px;
+        animation: saleanim 4s infinite;
+        cursor: pointer;
+    }
+
+    @keyframes saleanim {
+        from {
+            color: black;
+            transform: rotate(0deg);
+        }
+
+        to {
+            color: rgb(255, 0, 0);
+            transform: rotate(3600deg);
+        }
+    }
+
+    #sltxt {
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        margin-left: 4px;
+        font-weight: bold;
+        animation: saleanim1 1s infinite;
+    }
+
+    @keyframes saleanim1 {
+        from {
+            color: black;
+        }
+
+        to {
+            color: rgb(255, 0, 0);
+        }
+    }
+
+    #quote {
+        font-size: 50px;
+        font-weight: bold;
+        color: #333;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        margin-top: 20px;
+        margin-left: 300px;
+        margin-bottom: 40px;
+        cursor: pointer;
+    }
+
+    #rotatingword {
+        color: #007bff;
+        transition: opacity 0.5s ease-in-out;
+    }
+
+    #mw {
+        margin-left: 40px;
+        font-family: "Pacifico", cursive;
+        font-weight: bolder;
+        text-decoration: underline;
+    }
+
+    #it1 {
+        width: 350px;
+        height: 550px;
+        border: 2px solid black;
+        border-radius: 20px;
+        position: relative;
+        margin-left: 20px;
+        margin-bottom: 20px;
+    }
+
+    #itib1 {
+        width: 42px;
+        height: 20px;
+        border: 0px solid black;
+        background-color: white;
+        color: black;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        border-radius: 30px;
+        margin-left: 10px;
+        margin-top: 10px;
+        align-items: center;
+        padding-left: 10px;
+        font-weight: bold;
+        padding-bottom: 5px;
+        animation: newanim 1s infinite;
+        position: relative;
+    }
+
+    @keyframes newanim {
+        0% {
+            background-color: white;
+            color: black;
+        }
+
+        25% {
+            background-color: rgba(255, 0, 0, 0.679);
+            color: rgb(255, 255, 255)ed;
+        }
+
+        50% {
+            background-color: white;
+            color: black;
+        }
+
+        100% {
+            background-color: rgba(255, 0, 0, 0.616);
+            color: rgb(255, 255, 255);
+        }
+    }
+
+    #itm1 {
+        width: 350px;
+        height: 350px;
+        border: 0px solid;
+        position: absolute;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+        background-image: url("https://github.com/srivatsa2005/TrendyFriends/blob/main/Untitled%20design%20(18).png?raw=true");
+        background-size: cover;
+        border-bottom: 1px solid;
+    }
+
+    .qs {
+        display: inline-flex;
+        align-items: center;
+        border: 2px solid #918c8c;
+        border-radius: 25px;
+        overflow: hidden;
+        width: 108px;
+        height: 40px;
+        margin-left: 10px;
+    }
+
+    .qs button {
+        background-color: #000000;
+        border: none;
+        padding: 10px 10px;
+        cursor: pointer;
+        font-size: 20px;
+        color: white;
+    }
+
+    .qs button:hover {
+        background-color: #373737;
+    }
+
+    .qs input {
+        width: 40px;
+        text-align: center;
+        border: none;
+        padding: 5px;
+        font-size: 15px;
+    }
+
+    .qs input::-webkit-outer-spin-button,
+    .qs input::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+    }
+
+    #q {
+        margin-top: 370px;
+        line-height: 0;
+        margin-left: 20px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        opacity: 0.8;
+        font-size: small;
+    }
+
+    #cost {
+        margin-left: 18px;
+        font-size: 25px;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif, Tahoma, Geneva, Verdana, sans-serif, 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        margin-top: 10px;
+        top: 0px;
+        font-weight: bold;
+    }
+
+    #cmt {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        margin-left: 12px;
+        margin-top: 9px;
+        font-weight: bold;
+    }
+
+    #c1 {
+        width: 26px;
+        height: 25px;
+        border: 2px solid rgb(0, 0, 0);
+        margin-left: 12px;
+        border-radius: 50%;
+        background-color: rgba(0, 0, 0, 0.919);
+        opacity: 0.7;
+    }
+
+    #c1:hover {
+        opacity: 1;
+        cursor: pointer;
+    }
+
+    #bn {
+        margin-left: 168px;
+        width: 100px;
+        height: 35px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-weight: bold;
+        background-color: transparent;
+        margin-top: 5px;
+        border-radius: 20px;
+        opacity: 0.8;
+    }
+
+    #bn:hover {
+        opacity: 1;
+        cursor: pointer;
+        background-color: black;
+        color: white;
+    }
+
+    #size {
+        margin-left: 12px;
+        border-radius: 20px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-weight: bold;
+        cursor: pointer;
+        border: 0px;
+    }
+
+    #fsrow {
+        display: flex;
+        width: 100%;
+        height: 0px;
+    }
 </style>
+
 <body>
     <hr style="width: 800px;">
     <header style="display: flex;">
@@ -287,78 +540,303 @@ color: red;
             <li>About</li>
         </ul>
         <div class="dropdown">
-         <p id="menubar"><i class="fa-solid fa-bars"></i></p>
-        <div class="dropdown-content">
-            <a href="#"><i class="fa-solid fa-user"></i> Profile</a>
-            <a href="#"><i class="fa-solid fa-box-open"></i> My Orders</a>
-            <a href="#"><i class="fa-solid fa-cart-shopping"></i> Cart</a>
-            <a href="#"><i class="fa-solid fa-headset"></i> Support</a>
-            <a href="#"><i class="fa-solid fa-gear"></i> Settings</a>
-            <a href="#"><i class="fa-solid fa-right-from-bracket"></i> Log Out</a>
-          </div>
-        </div> 
+            <p id="menubar"><i class="fa-solid fa-bars"></i></p>
+            <div class="dropdown-content">
+                <a href="#"><i class="fa-solid fa-user"></i> Profile</a>
+                <a href="#"><i class="fa-solid fa-box-open"></i> My Orders</a>
+                <a href="#"><i class="fa-solid fa-cart-shopping"></i> Cart</a>
+                <a href="#"><i class="fa-solid fa-headset"></i> Support</a>
+                <a href="#"><i class="fa-solid fa-gear"></i> Settings</a>
+                <a href="#"><i class="fa-solid fa-right-from-bracket"></i> Log Out</a>
+            </div>
+        </div>
     </header>
     <hr id="close">
     <!-- body -->
-     <div>
+    <div>
+        <div id="quote">
+            The threads you wear, the story you tell,<br> begin with <span id="rotatingword"></span>.
+        </div>
         <div id="mnbox">
             <div style="display: flex;">
-            <p id="sale"><i style="margin-left: 4px;margin-top: 2px;" class="fa-solid fa-percent"></i></p>
-            <p id="sltxt">Sale End Soon!</p>
+                <p id="sale"><i style="margin-left: 4px;margin-top: 2px;" class="fa-solid fa-percent"></i></p>
+                <p id="sltxt">Sale End Soon!</p>
+            </div>
+            <p id="mtext">Get Your Pair Before the<br> Trend Ends !! <br><button id="slbt">Get Noww! <i
+                        class="fa-solid fa-angle-right"></i><i class="fa-solid fa-angle-right"></i></button></p>
+            <div id="inbx1">
+                <button id="bb1">Buy Now! <i class="fa-solid fa-angle-right"></i></button>
+            </div>
+            <div id="inbx2">
+                <button id="bb2">Check out! <i class="fa-solid fa-angle-right"></i></button>
+            </div>
         </div>
-            <p id="mtext">Get Your Pair Before the<br> Trend Ends !! <br><button id="slbt">Get Noww! <i class="fa-solid fa-angle-right"></i><i class="fa-solid fa-angle-right"></i></button></p>
-        <div id="inbx1">
-            <button id="bb1">Buy Now! <i class="fa-solid fa-angle-right"></i></button>
+        <h1 id="mw">Mens Wear</h1>
+        <!-- FIRSTROW -->
+        <div id="fsrow">
+            <div id="Mens">
+                <!-- CARD1 -->
+                <div>
+                    <div id="it1">
+                        <div id="itm1">
+                            <div id="itib1">New</div>
+                        </div>
+                        <p id="q">Quantity</p>
+                        <div style="display: flex;">
+                            <div class="qs">
+                                <button onclick="decrement()">-</button>
+                                <input type="number" id="quantity" value="1" min="1" max="10">
+                                <button onclick="increment()">+</button>
+                            </div>
+                            <p id="cmt"><i>Mens Regular White T-shirt</i></p>
+                        </div>
+                        <div style="display: flex;margin-top: 10px;">
+                            <h3
+                                style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;font-weight: 200;margin-left: 15px;font-size: 15px;margin-top: 2px;">
+                                colour :</h3>
+                            <div style="display: flex;">
+                                <div id="c1"></div>
+                                <div id="c1" style="background-color: rgba(248, 36, 36, 0.845);"></div>
+                                <div id="c1" style="background-color: rgba(35, 213, 249, 0.845);"></div>
+                            </div>
+                        </div>
+                        <div style="display: flex;">
+                            <p
+                                style="margin-top: 12px;line-height: 0;margin-left: 15px;font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;font-weight: 200;">
+                                size :</p>
+                            <select id="size">
+                                <option selected>S</option>
+                                <option>L</option>
+                                <option>XL</option>
+                                <option>XXL</option>
+                            </select>
+                        </div>
+                        <div style="display: flex;">
+                            <p id="cost">₹300</p>
+                            <button id="bn">Buy Now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- CARD1 -->
+            <!-- CARD2 -->
+            <div>
+                <div id="it1">
+                    <div id="itm1">
+                        <div id="itib1">New</div>
+                    </div>
+                    <p id="q">Quantity</p>
+                    <div style="display: flex;">
+                        <div class="qs">
+                            <button onclick="decrement()">-</button>
+                            <input type="number" id="quantity" value="1" min="1" max="10">
+                            <button onclick="increment()">+</button>
+                        </div>
+                        <p id="cmt"><i>Mens Regular White T-shirt</i></p>
+                    </div>
+                    <div style="display: flex;margin-top: 10px;">
+                        <h3
+                            style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;font-weight: 200;margin-left: 15px;font-size: 15px;margin-top: 2px;">
+                            colour :</h3>
+                        <div style="display: flex;">
+                            <div id="c1"></div>
+                            <div id="c1" style="background-color: rgba(248, 36, 36, 0.845);"></div>
+                            <div id="c1" style="background-color: rgba(35, 213, 249, 0.845);"></div>
+                        </div>
+                    </div>
+                    <div style="display: flex;">
+                        <p
+                            style="margin-top: 12px;line-height: 0;margin-left: 15px;font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;font-weight: 200;">
+                            size :</p>
+                        <select id="size">
+                            <option selected>S</option>
+                            <option>L</option>
+                            <option>XL</option>
+                            <option>XXL</option>
+                        </select>
+                    </div>
+                    <div style="display: flex;">
+                        <p id="cost">₹300</p>
+                        <button id="bn">Buy Now</button>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div id="inbx2">
-            <button id="bb2">Check out! <i class="fa-solid fa-angle-right"></i></button>
+        <!-- CARD2 -->
+         <div id="fsrow">
+        <!-- CARD3 -->
+            <div style="margin-left: 765px;" id="it1">
+                <div id="itm1">
+                    <div id="itib1">New</div>
+                </div>
+                <p id="q">Quantity</p>
+                <div style="display: flex;">
+                    <div class="qs">
+                        <button onclick="decrement()">-</button>
+                        <input type="number" id="quantity" value="1" min="1" max="10">
+                        <button onclick="increment()">+</button>
+                    </div>
+                    <p id="cmt"><i>Mens Regular White T-shirt</i></p>
+                </div>
+                <div style="display: flex;margin-top: 10px;">
+                    <h3
+                        style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;font-weight: 200;margin-left: 15px;font-size: 15px;margin-top: 2px;">
+                        colour :</h3>
+                    <div style="display: flex;">
+                        <div id="c1"></div>
+                        <div id="c1" style="background-color: rgba(248, 36, 36, 0.845);"></div>
+                        <div id="c1" style="background-color: rgba(35, 213, 249, 0.845);"></div>
+                    </div>
+                </div>
+                <div style="display: flex;">
+                    <p
+                        style="margin-top: 12px;line-height: 0;margin-left: 15px;font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;font-weight: 200;">
+                        size :</p>
+                    <select id="size">
+                        <option selected>S</option>
+                        <option>L</option>
+                        <option>XL</option>
+                        <option>XXL</option>
+                    </select>
+                </div>
+                <div style="display: flex;">
+                    <p id="cost">₹300</p>
+                    <button id="bn">Buy Now</button>
+                </div>
+            </div>
         </div>
-     </div>
-     </div>
+    </div>
+    <!-- CARD3 -->
+    <!-- CARD4 -->
+    <div style="margin-left: 1120px;margin-top: 0px;">
+        <div id="it1">
+            <div id="itm1">
+                <div id="itib1">New</div>
+            </div>
+            <p id="q">Quantity</p>
+            <div style="display: flex;">
+                <div class="qs">
+                    <button onclick="decrement()">-</button>
+                    <input type="number" id="quantity" value="1" min="1" max="10">
+                    <button onclick="increment()">+</button>
+                </div>
+                <p id="cmt"><i>Mens Regular White T-shirt</i></p>
+            </div>
+            <div style="display: flex;margin-top: 10px;">
+                <h3
+                    style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;font-weight: 200;margin-left: 15px;font-size: 15px;margin-top: 2px;">
+                    colour :</h3>
+                <div style="display: flex;">
+                    <div id="c1"></div>
+                    <div id="c1" style="background-color: rgba(248, 36, 36, 0.845);"></div>
+                    <div id="c1" style="background-color: rgba(35, 213, 249, 0.845);"></div>
+                </div>
+            </div>
+            <div style="display: flex;">
+                <p
+                    style="margin-top: 12px;line-height: 0;margin-left: 15px;font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;font-weight: 200;">
+                    size :</p>
+                <select id="size">
+                    <option selected>S</option>
+                    <option>L</option>
+                    <option>XL</option>
+                    <option>XXL</option>
+                </select>
+            </div>
+            <div style="display: flex;">
+                <p id="cost">₹300</p>
+                <button id="bn">Buy Now</button>
+            </div>
+        </div>
+    </div>
+    </div>
+    <!-- CARD4 -->
+    </div>
+    </div>
+</div>
+<!-- FIRSTROW -->
     <!-- body -->
     <footer>
-        <div id="logbox"><img id="ftlogo" src="https://github.com/srivatsa2005/TrendyFriends/blob/main/TF%20LOGO.png?raw=true" alt="botlogo"></div>
+        <div id="logbox"><img id="ftlogo"
+                src="https://github.com/srivatsa2005/TrendyFriends/blob/main/TF%20LOGO.png?raw=true" alt="botlogo">
+        </div>
         <div id="splitter"></div>
         <div id="box1">
-    <ul id="foot" type="none" >
-        <li><i class="fa-solid fa-shirt"></i> Men's Wear</li>
-        <li><i class="fa-solid fa-shirt"></i> New Collection</li>
-        <li><i class="fa-solid fa-shirt"></i> Trendy Collections</li>
-        <li style="margin-left: 64px;"><i class="fa-solid fa-tags"></i> Sale</li>
-    </ul>
-</div>
-<div>
-    <p class="sp">Legal</p>
-    <ul style="line-height: 1.5;">
-        <li>Privacy Policy</li>
-        <li>User Policy</li>
-        <li>Cookie Policy</li>
-    </ul>
-</div>
-<div>
-    <p class="sp1">Customer Service & Support</p>
-    <ul style="line-height: 1.5;">
-        <li>FAQ / Helpcenter </li>
-        <li>Shipping & Returns</li>
-        <li>Order Tracking</li>
-        <li>Size Guide</li>
-    </ul>
-</div>
-<div>
-    <p id="fu">Follow Us:</p>
-    <ul type="none" style="display: flex;">
-        <li id="fui"><i class="fa-brands fa-instagram"></i></li>
-        <li id="fui"><i class="fa-brands fa-facebook"></i></li>
-        <li id="fui"><i class="fa-brands fa-x-twitter"></i></li>
-        <li id="fui"><i class="fa-brands fa-youtube"></i></li>
-    </ul>
-</div>
-<div id="cibox">
-    <p id="ci">Contact Information:</p>
-    <p id="ci">Email: krishnacharan2016@gmail.com</p>
-    <p id="ci">phone no: 7396398788</p>
-    <p id="ci">Reach us: Trendyfriends.support</p>
-</div>
+            <ul id="foot" type="none">
+                <li><i class="fa-solid fa-shirt"></i> Men's Wear</li>
+                <li><i class="fa-solid fa-shirt"></i> New Collection</li>
+                <li><i class="fa-solid fa-shirt"></i> Trendy Collections</li>
+                <li style="margin-left: 64px;"><i class="fa-solid fa-tags"></i> Sale</li>
+            </ul>
+        </div>
+        <div>
+            <p class="sp">Legal</p>
+            <ul style="line-height: 1.5;">
+                <li>Privacy Policy</li>
+                <li>User Policy</li>
+                <li>Cookie Policy</li>
+            </ul>
+        </div>
+        <div>
+            <p class="sp1">Customer Service & Support</p>
+            <ul style="line-height: 1.5;">
+                <li>FAQ / Helpcenter </li>
+                <li>Shipping & Returns</li>
+                <li>Order Tracking</li>
+                <li>Size Guide</li>
+            </ul>
+        </div>
+        <div>
+            <p id="fu">Follow Us:</p>
+            <ul type="none" style="display: flex;">
+                <li id="fui"><i class="fa-brands fa-instagram"></i></li>
+                <li id="fui"><i class="fa-brands fa-facebook"></i></li>
+                <li id="fui"><i class="fa-brands fa-x-twitter"></i></li>
+                <li id="fui"><i class="fa-brands fa-youtube"></i></li>
+            </ul>
+        </div>
+        <div id="cibox">
+            <p id="ci">Contact Information:</p>
+            <p id="ci">Email: krishnacharan2016@gmail.com</p>
+            <p id="ci">phone no: 7396398788</p>
+            <p id="ci">Reach us: Trendyfriends.support</p>
+        </div>
     </footer>
+    <script>
+        const rotatingWords = [
+            "Choice",
+            "Confidence",
+            "Authenticity",
+            "Creation",
+            "Inspiration"
+        ];
+        let wordIndex = 0;
+        const rotatingWordElement = document.getElementById("rotatingword");
+        function changeWord() {
+            rotatingWordElement.style.opacity = 0;
+            setTimeout(() => {
+                rotatingWordElement.textContent = rotatingWords[wordIndex];
+                rotatingWordElement.style.opacity = 1;
+                wordIndex = (wordIndex + 1) % rotatingWords.length;
+            }, 500);
+        }
+        changeWord();
+        setInterval(changeWord, 2000);
+        /* Quantity */
+        function increment() {
+            let quantityInput = document.getElementById("quantity");
+            if (parseInt(quantityInput.value) < 10) {
+                quantityInput.value = parseInt(quantityInput.value) + 1;
+            }
+        }
+        function decrement() {
+            let quantityInput = document.getElementById("quantity");
+            if (parseInt(quantityInput.value) > 1) {
+                quantityInput.value = parseInt(quantityInput.value) - 1;
+            }
+        }
+        /* Quantity */
+    </script>
 </body>
+
 </html>
